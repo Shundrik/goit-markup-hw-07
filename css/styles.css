@@ -79,11 +79,11 @@ img {
   font-size: 26px;
   line-height: 1.2;
 }
-.logo-web {
+.logo__web {
   color: var(--logo-web-color);
   margin-right: -5px;
 }
-.logo-studio {
+.logostudio {
   color: #000000;
 }
 
@@ -291,7 +291,7 @@ button:focus {
   margin-left: 0;
   margin-right: 0;
 }
-.section-title {
+.section__title {
   font-size: 36px;
   line-height: 1.17;
 
@@ -386,7 +386,7 @@ button:focus {
   padding: 0;
   padding-bottom: 94px;
 }
-.about-list {
+.about__list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
@@ -394,13 +394,13 @@ button:focus {
   padding: 0;
   list-style: none;
 }
-.about-item + .about-item {
+.about__item + .about__item {
   margin-left: 30px;
 }
-.about-item {
+.about__item {
   position: relative;
 }
-.about-overlay {
+.about__overlay {
   padding-top: 27px;
   padding-bottom: 27px;
   margin: 0%;
@@ -432,7 +432,7 @@ button:focus {
   background-color: #f5f4fa;
 }
 
-.team-list {
+.employee {
   display: flex;
 
   text-align: center;
@@ -441,10 +441,10 @@ button:focus {
   margin-top: 0;
   margin-bottom: 0;
 }
-.team-item + .team-item {
+.employee__item + .employee__item {
   margin-left: 30px;
 }
-.team-item {
+.employee__item {
   background-color: #ffffff;
 
   margin-left: 0;
@@ -454,7 +454,7 @@ button:focus {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-title {
+.employee__title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -462,11 +462,11 @@ button:focus {
   margin-top: 0;
   margin-bottom: 10px;
 }
-.team-card {
+.employee__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.team-text {
+.employee__text {
   color: var(--secondary-text-color);
 
   font-weight: 400;
@@ -479,7 +479,7 @@ button:focus {
   margin-right: 0;
   padding-left: 0;
 }
-.team-social {
+.employeeSocial {
   display: flex;
   justify-content: center;
   padding: 0;
@@ -487,13 +487,13 @@ button:focus {
 
   list-style: none;
 }
-.team-social-item {
+.employeeSocial-item {
   display: flex;
 }
-.team-social-item + .team-social-item {
+.employeeSocial__item + .employeeSocial__item {
   margin-left: 10px;
 }
-.team-link {
+.employeeSocial__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -510,12 +510,12 @@ button:focus {
   transition-timing-function: var(--timing-bezier), var(--timing-bezier);
 }
 
-.team-link:hover {
+.employeeSocial__link:hover {
   background-color: var(--accent-color);
   fill: currentColor;
 }
 
-.svg-team {
+.employeeSocial__svg {
   width: 20px;
   height: 20px;
 }
@@ -525,7 +525,7 @@ button:focus {
  --постоянные клиенты--
 
 ========================  */
-.costumers-list {
+.clients__list {
   display: flex;
   list-style: none;
   margin: 0;
@@ -533,10 +533,10 @@ button:focus {
   justify-content: center;
 }
 
-.costumers-item + .costumers-item {
+.clients__item + .clients__item {
   margin-left: 30px;
 }
-.costumer-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -555,11 +555,11 @@ button:focus {
   transition-duration: var(--transition-duration), var(--transition-duration);
   transition-timing-function: var(--timing-bezier), var(--timing-bezier);
 }
-.costumer-link:hover {
+.clients__link:hover {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
-.svg-logo {
+.clients__svg {
   width: 106px;
   height: 60px;
 }
@@ -622,10 +622,11 @@ address {
   display: flex;
   align-items: baseline;
 }
-.footer-social {
+.join {
   margin-right: 93px;
 }
-.social-item {
+
+.join__item {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
@@ -638,21 +639,22 @@ address {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-bezier);
 }
-.social-item:hover,
-.social-item:focus {
+
+.join__item:hover, 
+.join__item:focus {
   background-color: var(--accent-color);
 }
 
-.social-item + .social-item {
+.join__item + .join__item {
   margin-left: 10px;
 }
-.social-list {
+.join__list {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.social-text {
+.join__text {
   display: flex;
 
   margin-top: 0;
@@ -662,7 +664,7 @@ address {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.social-link {
+.join__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -670,29 +672,29 @@ address {
   height: 44px;
   margin: 0;
 }
-.svg-footer {
+.join__svg {
   display: inline-block;
   fill: #ffffff;
   width: 20px;
   height: 22px;
 }
 
-.footer-form {
+.email {
   display: flex;
   margin-right: 12px;
 }
-.form-field {
+.email__form{
   display: flex;
   align-items: flex-end;
   color: #ffffff;
 }
 
-.footer-form-zona {
+.email__fild {
   display: flex;
   flex-direction: column;
   margin-right: 12px;
 }
-.footer-form-zona > .form-label {
+.email__fild > .email__label {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -700,7 +702,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.footer-form-zona .form-input {
+.email__fild .email__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -714,14 +716,14 @@ address {
   font-size: 16px;
   line-height: 1.25;
 }
-.form-input {
+.email__input {
   color: #ffffff;
 }
-.form-input::placeholder {
+.email__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-btn {
+.email__btn {
   display: inline-flex;
   align-items: center;
 
@@ -740,7 +742,7 @@ address {
   line-height: 1.88;
   fill: currentColor;
 }
-.footer-btn:after {
+.email__btn:after {
   content: "";
 
   width: 24px;
@@ -845,7 +847,7 @@ address {
   margin-bottom: 10px;
 }
 
-.modal-form-group > .form-label {
+.modal-form-group > .mail__label {
   margin-top: 0;
   padding: 0;
   margin-bottom: 4px;
@@ -857,7 +859,7 @@ address {
   text-transform: none;
 }
 
-.modal-form-input {
+.modal-mail__input {
   width: 100%;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -876,8 +878,8 @@ address {
   fill: var(--accent-color);
 }
 
-.modal-form-input:focus,
-.modal-form-input:hover {
+.modal-mail__input:focus,
+.modal-mail__input:hover {
   border-color: var(--accent-color);
 }
 
