@@ -25,37 +25,38 @@
   <body>
     <!-- Шапка -->
 
+
     <header class="header">
       <div class="conteiner main-header">
         <nav class="nav">
+          
           <a class="logo" href="./index.html">
-            <span class="logoweb" lang="en">Web</span>
-            <span class="logo-studio" lang="en"> Studio</span></a
+            <span class="logo__web" lang="en">Web</span>
+            <span class="logo__studio" lang="en"> Studio</span></a
           >
-          <ul class="nav-list">
-            <li class="list">
-              <a class="nav-item current" href="./index.html">Студия</a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="./index.html">Студия</a>
             </li>
-            <li class="list">
-              <a class="nav-item" href="./portfolio.htm">Портфолио</a>
+            <li class="nav__item">
+              <a class="nav__link " href="./portfolio.htm">Портфолио</a>
             </li>
-            <li class="list">
-              <a class="nav-item" href="#footer">Контакты</a>
-            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#footer">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="auth-list">
-          <li class="item">
-            <a class="auth-link" href="mailto:info@destudio.com">
-              <svg class="auth-svg envelop">
+        <ul class="authorization__list">
+          <li class="authorization__item">
+            <a class="authorization__link" href="mailto:info@destudio.com">
+              <svg class="authorization__svg envelop">
                 <use href="./img/icons/symbol-defs.svg#envelope"></use>
               </svg>
               info@destudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="auth-link" href="tel:+380961111111">
-              <svg class="auth-svg smartphone">
+          <li class="authorization__item">
+            <a class="authorization__link" href="tel:+380961111111">
+              <svg class="authorization__svg smartphone">
                 <use href="./img/icons/symbol-defs.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -71,8 +72,8 @@
 
       <section class="hero overlay">
         <div class="conteiner">
-          <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-          <button class="button" type="button" data-modal-open>
+          <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+          <button class="hero_btn" type="button" data-modal-open>
             заказать услугу
           </button>
         </div>
@@ -83,31 +84,31 @@
       <section class="section">
         <div class="conteiner">
           <h2 class="section__title visually-hidden">особенности</h2>
-          <ul class="pec">
-            <li class="pec-item icon-antenna">
-              <h3 class="pec-title">Внимание к деталям</h3>
-              <p class="pec-text">
+          <ul class="peculiarities">
+            <li class="peculiarities__item icon-antenna">
+              <h3 class="peculiarities__title">Внимание к деталям</h3>
+              <p class="peculiarities__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="pec-item icon-clock">
-              <h3 class="pec-title">Пунктуальность</h3>
-              <p class="pec-text">
+            <li class="peculiarities__item icon-clock">
+              <h3 class="peculiarities__title">Пунктуальность</h3>
+              <p class="peculiarities__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="pec-item icon-diagram">
-              <h3 class="pec-title">Планирование</h3>
-              <p class="pec-text">
+            <li class="peculiarities__item icon-diagram">
+              <h3 class="peculiarities__title">Планирование</h3>
+              <p class="peculiarities__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="pec-item icon-astronaut">
-              <h3 class="pec-title">Современные технологии</h3>
-              <p class="pec-text">
+            <li class="peculiarities__item icon-astronaut">
+              <h3 class="peculiarities__title">Современные технологии</h3>
+              <p class="peculiarities__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -509,21 +510,21 @@
     <footer class="footer" id="footer">
       <div class="conteiner social">
         <div class="address">
-          <a class="footer-logo" href="./index.html">
-            <span class="logo-web" lang="en">Web</span>
-            <span class="footer-studio" lang="en">Studio</span></a
+          <a class="logo" href="./index.html">
+            <span class="logo__web" lang="en">Web</span>
+            <span class="logo__studio logo__studio--color {" lang="en">Studio</span></a
           >
-          <address class="">
-            <span>г. Киев, пр-т Леси Украинки, 26</span>
+          <address class="contact-address">
+            <span class="contact-address__text">г. Киев, пр-т Леси Украинки, 26</span>
 
-            <ul class="add-link">
-              <li>
-                <a class="add-item" href="mailto:info@destudio.com"
+            <ul class="contact-address__list">
+              <li class="contact-address__item">
+                <a class="contact-address__link" href="mailto:info@destudio.com"
                   >info@destudio.com</a
                 >
               </li>
-              <li>
-                <a class="add-item" href="tel:+380961111111"
+              <li class="contact-address__item">
+                <a class="contact-address__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
@@ -610,55 +611,54 @@
     <!-- модальое окно -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
-          <svg class="modal-svg-btn" width="18" height="18">
+      <div class="modal-data">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="close-btn__svg" width="18" height="18">
             <use href="./img/icons/symbol-defs.svg#close"></use>
           </svg>
         </button>
 
-        <p class="modal-hero-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-data__title">Оставьте свои данные, мы вам перезвоним</p>
 
-        <form class="form-hero">
-          <div class="modal-form-group">
-            <label class="form-label" for="text">Имя</label>
-            <input
-              class="modal-form-input"
+        <form class="data">
+          <div class="data-group">
+            <label class="data-group__label" for="text">Имя</label>
+            <input class="data-group__input"
               type="text"
               name="user-name"
               id="text"
             />
 
-            <svg class="modal-svg" width="18" height="18">
+            <svg class="data-group__svg" width="18" height="18">
               <use href="./img/icons/symbol-defs.svg#person"></use>
             </svg>
           </div>
 
-          <div class="modal-form-group">
-            <label class="form-label" for="tel">Телефон </label>
-            <input class="modal-form-input" type="tel" name="tel" id="tel" />
-            <svg class="modal-svg" width="18" height="18">
+          <div class="data-group">
+            <label class="data-group__label" for="tel">Телефон </label>
+            <input class="data-group__input" type="tel" name="tel" id="tel" />
+            <svg class="data-group__svg" width="18" height="18">
               <use href="./img/icons/symbol-defs.svg#phone"></use>
             </svg>
           </div>
 
-          <div class="modal-form-group">
-            <label class="form-label" for="modal-email">Почта </label>
+          <div class="data-group">
+            <label class="data-group__label" for="modal-email">Почта </label>
             <input
-              class="modal-form-input"
+              class="data-group__input"
               type="tel"
               name="email"
               id="modal-email"
             />
-            <svg class="modal-svg" width="18" height="18">
+            <svg class="data-group__svg" width="18" height="18">
               <use href="./img/icons/symbol-defs.svg#email"></use>
             </svg>
           </div>
 
-          <div class="modal-form-group">
-            <label class="form-label" for="textarea">Комментарий</label>
+          <div class="data-group">
+            <label class="data-group__label" for="textarea">Комментарий</label>
             <textarea
-              class="modal-form-textarea"
+              class="data-group__input data-group__input--textarea"
               name="coments"
               id="textarea"
               placeholder="Введите текст"
@@ -681,7 +681,7 @@
             <a class="link-contract" href="">Условия договора</a>
           </div>
 
-          <button class="modal-submit-btn" type="submit">Отправить</button>
+          <button class="data-submit-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
