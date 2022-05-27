@@ -51,6 +51,15 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/* ======================== 
+
+-- шапка--
+
+========================  */
+
+/* лого  в навигации */
+
 .main-header {
   display: flex;
   align-items: center;
@@ -63,13 +72,6 @@ img {
   display: flex;
   align-items: center;
 }
-/* ======================== 
-
--- шапка--
-
-========================  */
-
-/* лого  в навигации */
 
 .logo {
   display: flex;
@@ -763,12 +765,15 @@ img {
   width: 24px;
   height: 24px;
   fill: #ffffff;
-  background-image: url(../img/icons/icon\ send.svg);
+  background-image: url(../img/icons/send.svg);
   margin-left: 12px;
   background-size: contain;
   background-position: center;
 }
-
+.email__btn:hover{
+  background-color: #188ce8;
+  cursor: pointer;
+}
 /* ...................................
 
     -- модальное окно --
@@ -808,7 +813,7 @@ img {
   transition-duration: 1000ms;
   transition-timing-function: var(--timing-bezier);
 }
-.close-btn {
+.modal-data-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -824,18 +829,18 @@ img {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.close-btn__svg {
+.modal-data__svg {
   display: block;
   margin: auto auto;
   transition-property: fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-bezier);
 }
-.close-btn__svg:hover {
+.modal-data__svg:hover {
   background-color: transparent;
   fill: var(--accent-color);
 }
-.data {
+.modal-data__form{
   display: inline-block;
 
   width: 100%;
@@ -904,12 +909,14 @@ img {
   width: 100%;
   height: 120px;
   padding: 12px 16px;
+  font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
    
 }
 
-/* .data-group__input--textarea:placeholder {
-  color: rgba(232, 23, 23, 0.5);
-} */
 
 .data-group__svg {
   position: absolute;
@@ -920,7 +927,7 @@ img {
   margin: 0;
   padding: 0;
 }
-.modal-form-fild {
+.data-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -938,14 +945,9 @@ img {
   transition-timing-function: var(--timing-bezier);
 }
 
-.data-group label {
-  font-size: 14px;
-  line-height: 1.72;
 
-  color: #757575;
-}
 
-.link-contract {
+.data-checkbox__link {
   margin: 0 5px;
   padding: 0%;
   color: #188ce8;
@@ -954,7 +956,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.checkbox-label {
+.data-checkbox__label {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -965,15 +967,15 @@ img {
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--timing-bezier);
 }
-.checkbox-label:hover .checkbox-icon {
+.data-checkbox__label:hover .data-checkbox__icon {
   border-color: #188ce8;
   cursor: pointer;
 }
-.checkbox-label:hover {
+.data-checkbox__label:hover {
   cursor: pointer;
 }
 
-.checkbox-icon {
+.data-checkbox__icon {
   display: inline-block block;
   align-items: center;
 
@@ -984,21 +986,21 @@ img {
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
 }
-.modal-input-checkbox:checked + .checkbox-icon {
+.data-checkbox__input:checked + .data-checkbox__icon {
   background-color: var(--accent-color);
-  background-image: url(../img/icons/icon\ check.svg);
+  background-image: url(../img/icons/icon/check.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-origin: border-box;
   border-color: var(--accent-color);
 }
-.checkbox-icon:hover {
+.data-checkbox__icon:hover {
   cursor: pointer;
   border-color: var(--accent-color);
 }
 
-.modal-input-checkbox {
+.data-checkbox__input {
   display: flex;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1006,7 +1008,7 @@ img {
   position: absolute;
 }
 
-.data-submit-btn {
+.data__btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1024,6 +1026,11 @@ img {
   font-size: 16px;
   line-height: 1.88;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.data__btn:hover{
+  background-color: #188ce8;
+  cursor: pointer;
+
 }
 
 /* -------------------------------- 
@@ -1200,3 +1207,7 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
+ .ksksksks{
+
+background: #000;
+  }

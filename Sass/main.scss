@@ -1,0 +1,38 @@
+@import "./base/_normalize";
+@import "./utils/_variables";
+
+// Хедер
+@import "./Components/_header";
+
+// герой
+@import "./Components/_hero";
+
+// модальное окно героя
+@import './Components/_modalData';
+
+//   особенности
+
+@import './Components/_peculiarities';
+
+// чем мы занимаемся
+
+@import "./Components/_about";
+
+//   наши сотрудники
+
+@import "./Components/_employee";
+
+// наши клиенты
+
+@import "./Components/_clients";
+
+// футер
+
+@import "./Components/_footer";
+
+// секция портфолио
+
+@import './Components/_portfolio';
+
+
+//  The end
