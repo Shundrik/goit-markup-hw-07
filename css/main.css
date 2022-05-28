@@ -862,7 +862,7 @@ img {
 }
 
 .icon-antenna::before {
-  background-image: url(../../img/icons/antenna.svg);
+  background-image: url(../img/icons/antenna.svg);
 }
 
 .peculiarities__item.icon-clock::before {
@@ -1323,7 +1323,7 @@ img {
   width: 24px;
   height: 24px;
   fill: #ffffff;
-  background-image: url(../../img/icons/send.svg);
+  background-image: url(../img/icons/send.svg);
   margin-left: 12px;
   background-size: contain;
   background-position: center;
