@@ -1,5 +1,4 @@
- /*  -- авторизация -- */
-  
+
   .authorization__list {
     display: flex;
   
@@ -10,13 +9,17 @@
   
     font-weight: 500;
     font-size: 14px;
+
     line-height: 1.14;
     align-items: center;
   }
+
   .authorization__item {
     display: flex;
+
     list-style: none;
   }
+
   .authorization__item + .authorization__item {
     margin-left: 30px;
   }
@@ -24,19 +27,21 @@
   .authorization__link {
     display: flex;
   
-    color: var(--secondary-text-color);
+    color: $secondary-text-color;
     padding: 0;
     margin: 0;
     text-decoration: none;
   
     transition-property: color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--timing-bezier);
+    transition-duration: $transition-duration;
+    transition-timing-function:$timing-bezier;
+    
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    
   }
-  
-  .authorization__link:hover,
-  .authorization__link:focus {
-    color: var(--accent-color);
+    
   }
   
   .authorization__svg {

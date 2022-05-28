@@ -8,9 +8,15 @@
     line-height: 1.2;
   }
   .logo__web {
-    color: var(--logo-web-color);
+    color: $logo-web-color;
   }
   
   .logo__studio {
     color: #000000;
+  }
+
+  .logo__studio--white-color {
+    display: flex;
+    color: #ffffff;
+    margin-bottom: 20px;
   }

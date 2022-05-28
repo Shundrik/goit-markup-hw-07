@@ -1,21 +1,26 @@
 .clients__list {
   display: flex;
-  list-style: none;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
-  justify-content: center;
+
+  list-style: none;
 }
 
 .clients__item + .clients__item {
   margin-left: 30px;
 }
+
 .clients__link {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 170px;
 
+  align-items: center;
+
+  width: 170px;
   height: 92px;
+
   padding: 0;
 
   border: 1px solid #afb1b8;
@@ -25,12 +30,15 @@
   fill: currentColor;
 
   transition-property: color, border;
-  transition-duration: var(--transition-duration), var(--transition-duration);
-  transition-timing-function: var(--timing-bezier), var(--timing-bezier);
-}
-.clients__link:hover {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  transition-duration: $transition-duration, $transition-duration;
+  transition-timing-function: $timing-bezier, $timing-bezier;
+  
+  &:hover,
+  &:focus{
+    color: $accent-color;
+    border: 1px solid $accent-color;
+
+  }
 }
 .clients__svg {
   width: 106px;

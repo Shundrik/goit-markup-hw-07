@@ -4,6 +4,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
+
   .hero__title {
     max-width: 696px;
     margin-left: auto;
@@ -14,7 +15,9 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+
     color: #ffffff;
+
     text-align: center;
     text-transform: uppercase;
   }
@@ -32,12 +35,12 @@
     background-position: center;
     background-size: cover;
     
-    background-color: var(--secondary-bg-color);
+    background-color: $secondary-bg-color;
   }
   
   .hero_btn {
-    color: var(--button-text-color);
-    background-color: var(--button-bg-color);
+    color:$button-text-color;
+    background-color:$button-bg-color;
     text-align: center;
   
     display: inline-block;
@@ -53,11 +56,14 @@
     line-height: 1.87;
   
     transition-property: background-color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--timing-bezier);
+    transition-duration:$transition-duration;
+    transition-timing-function: $timing-bezier;
+    
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+      cursor: pointer;
+    }
+
   }
-  .hero_btn:hover,
-  .hero_btn:focus {
-    background-color: #188ce8;
-    cursor: pointer;
-  }
+  
