@@ -58,7 +58,7 @@
     transition-property: background-color;
     transition-duration:$transition-duration;
     transition-timing-function: $timing-bezier;
-    
+
     &:hover,
     &:focus {
       background-color: #188ce8;
