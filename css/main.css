@@ -866,15 +866,15 @@ img {
 }
 
 .peculiarities__item.icon-clock::before {
-  background-image: url(../../img/icons/clock.svg);
+  background-image: url(../img/icons/clock.svg);
 }
 
 .peculiarities__item.icon-diagram::before {
-  background-image: url(../../img/icons/diagram.svg);
+  background-image: url(../img/icons/diagram.svg);
 }
 
 .peculiarities__item.icon-astronaut::before {
-  background-image: url(../../img/icons/astronaut.svg);
+  background-image: url(../img/icons/astronaut.svg);
 }
 
 .peculiarities__item + .peculiarities__item {
@@ -1323,7 +1323,7 @@ img {
   width: 24px;
   height: 24px;
   fill: #ffffff;
-  background-image: url(../img/icons/send.svg);
+  background-image: url(../../img/icons/send.svg);
   margin-left: 12px;
   background-size: contain;
   background-position: center;
